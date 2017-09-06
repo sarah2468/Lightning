@@ -14,9 +14,10 @@ void draw()
 {
   stroke((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
   while(endX < 500){
-    line(startX, startY, endX, endY);
+ 
     endX = startX + (int)(Math.random()*10);
     endY = startY + (int)(Math.random()*20)-9;
+    line(startX, startY, endX, endY);
     startX = endX;
     startY = endY;
   }
